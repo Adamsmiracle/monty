@@ -18,7 +18,7 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
         {"add", add}, 
         {"nop", nop}, 
         {"sub", sub}, 
-        {"div", div}, 
+        {"div", f_div}, 
         {"mul", mul}, 
         {"mod", mod}, 
         {"pchar", pchar}, 
@@ -26,7 +26,6 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
         {"rotl", rotl}, 
         {"rotr", rotr}, 
         {"queue", queue}, 
-        {"stack",stack}, 
         {NULL, NULL}};
     unsigned int i = 0;
     char *op;
